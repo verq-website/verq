@@ -104,13 +104,13 @@ const About = ({ data }: AboutProps) => {
     return (
         <ContainerLayout>
             <div
-            id="about"
+                id="about"
                 ref={sectionRef}
                 className="About-section relative z-10 flex flex-col item-center justify-center lg:h-[190vh] min-h-screen py-10 lg:py-0 gap-1 px-5 lg:px-0 rounded-xl overflow-hidden"
             >
                 <div
                     ref={circleRef}
-                    className="absolute w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] bg-[radial-gradient(ellipse_900px_700px_at_25%_25%,#e07a5f_0%,#101010_20%,#000000_45%,#4a2a0d_75%,#000000_100%)] rounded-full top-20 -right-10 lg:top-40 lg:-right-10"
+                    className="absolute w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] bg-[radial-gradient(ellipse_900px_700px_at_25%_25%,#e07a5f_0%,#101010_20%,#000000_45%,#4a2a0d_75%,#000000_100%)] rounded-full top-20 -right-10 lg:top-40 lg:-right-10 z-10"
                 >
                     {/* <Image
                     src="/bgZoom.png"
@@ -207,7 +207,7 @@ const About = ({ data }: AboutProps) => {
                                         className="object-cover"
                                     />
                                 </div>
-<div className="flex flex-row gap-3 items-center justify-center">
+                                <div className="flex flex-row gap-3 items-center justify-center">
                                     <div className="p-4 bg-[#FFD0C1] rounded-full">
                                         <Image src='/Icons/stopwatch.png' alt='pen' width={20} height={20} />
                                     </div>

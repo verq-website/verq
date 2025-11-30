@@ -3,6 +3,7 @@ import "./globals.css";
 import LenisProvider from "@/wrapper/ScrollWrapper";
 import { inter, orpix } from "@/fonts";
 import Navbar from "@/components/Navigation/Navbar";
+import FluidCursorOverlay from "@/components/Reusable/FluidCursor";
 
 
 
@@ -22,6 +23,7 @@ export default async function RootLayout({
         className={`${inter.variable} ${orpix.variable} antialiased`}
       >
         <LenisProvider>
+          <FluidCursorOverlay />
           <Navbar />
           {children}
          

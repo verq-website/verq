@@ -10,6 +10,9 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       lerp: 0.05,
+
+      prevent: () => false,                   // ← don't block pointer events
+     
     });
 
     function raf(time: number) {
