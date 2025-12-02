@@ -35,9 +35,13 @@ html {
 
 }
 
-
-
 #fluid {
-  pointer-events: none; /* Important: let mouse pass through */
-  mix-blend-mode: overlay; /* or screen, or normal — try overlay for premium glass */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Important: allows interaction through canvas */
+  mix-blend-mode: overlay; /* or screen, or normal + opacity */
+  opacity: 0.9;
+  z-index: 9999;
 }
