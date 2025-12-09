@@ -32,9 +32,7 @@ export const fetchAbout = async (): Promise<AboutData | null> => {
   try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/about?populate[GroupedImageIcon][populate]=*`,
-      {
-        cache: "no-store",
-      }
+
     );
 
     if (!response.ok) {
