@@ -9,7 +9,6 @@ import { NAV_LINKS } from "@/constants/Nav";
 
 const ScrambleLink = ({ text, href }: { text: string; href: string }) => {
   const linkRef = useRef<HTMLAnchorElement>(null);
-  const buttonRef = useRef<HTMLAnchorElement>(null);
   const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
   const scrambleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

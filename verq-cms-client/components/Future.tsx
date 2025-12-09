@@ -22,7 +22,7 @@ const Future = ({ data: futureData }: FutureProps) => {
             ScrollTrigger.create({
                 trigger: sectionRef.current,
                 start: 'top top',
-                end: '+=700%',
+                end: '+=1500%',
                 pin: true,
                 pinSpacing: false,
                 anticipatePin: 1,

@@ -98,7 +98,7 @@ const Design = ({ data }: { data: any }) => {
           {title}
         </h1>
 
-        <div className="absolute top-80">
+        <div className="absolute top-80 2xl:top-120">
           <Image
             src="/design.png"
             alt="icons"

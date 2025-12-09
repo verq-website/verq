@@ -124,7 +124,7 @@ const About = ({ data }: AboutProps) => {
                     {/* Block 1 */}
                     {data.GroupedImageIcon[0] && (
                         <div ref={block1Ref} className="flex-1 flex flex-col gap-5 will-change-transform">
-                            <div className="relative overflow-hidden w-full lg:w-90 h-[250px] lg:h-[550px] rounded-t-full mx-auto">
+                            <div className="relative overflow-hidden w-full lg:w-90 xl:w-90 2xl:w-[490px] h-[250px] lg:h-[550px] xl:h-[550px] 2xl:h-[650px] rounded-t-full mx-auto">
                                 <Image
                                     src={data.GroupedImageIcon[0].Image.url}
                                     alt={data.GroupedImageIcon[0].Image.alternativeText}
@@ -167,7 +167,7 @@ const About = ({ data }: AboutProps) => {
 
                         {data.GroupedImageIcon[2] && (
                             <div ref={block3Ref} className="flex flex-col items-center gap-5 mt-5 lg:mt-10 will-change-transform">
-                                <div className="relative overflow-hidden w-full max-w-[300px] lg:max-w-none xl:max-w-md 2xl:max-w-none h-[130px] lg:h-[180px] xl:h-[180px] 2xl:h-[180px] rounded-full mx-auto lg:mx-0">
+                                <div className="relative overflow-hidden w-full max-w-[300px] lg:max-w-none xl:max-w-md 2xl:max-w-none h-[130px] lg:h-[180px] xl:h-[180px] 2xl:h-[230px] rounded-full mx-auto lg:mx-0">
                                     <Image
                                         src={data.GroupedImageIcon[2].Image.url}
                                         alt={data.GroupedImageIcon[2].Image.alternativeText}

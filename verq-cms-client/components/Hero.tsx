@@ -68,10 +68,10 @@ export default function Hero({ data }: HeroProps) {
       </div> */}
 
         {/* Hero Content */}
-        <div className="relative z-20 h-full flex flex-col justify-end md:pb-10 pb-40 px-4 lg:px-8">
+        <div className="relative z-20 h-full flex flex-col justify-end md:pb-5 pb-40 px-4 lg:px-8">
           <h1
             ref={titleRef}
-            className="text-7xl md:text-9xl lg:text-[100px] xl:text-[100px] 2xl:text-[120px] 2xl:leading-[125px] xl:leading-[75px] lg:leading-[105px] font-regular text-[#FFD0C1] tracking-tighter"
+            className="text-7xl md:text-9xl lg:text-[100px] xl:text-[100px] 2xl:text-[120px] 2xl:leading-[95px] xl:leading-[75px] lg:leading-[105px] font-regular text-[#FFD0C1] tracking-tighter"
           >
             {data.title.split(' ').slice(0, 1).join(' ')}
             <br />
@@ -80,25 +80,25 @@ export default function Hero({ data }: HeroProps) {
 
           <p
             ref={subtitleRef}
-            className="text-lg md:text-xl lg:text-[20px] text-[#e0e0e0] md:mt-3 mt-1 max-w-sm font-light tracking-wide opacity-90"
+            className="text-lg md:text-xl lg:text-[20px] text-[#e0e0e0] md:mt-2 mt-1 max-w-sm font-light tracking-wide opacity-90"
           >
             {data.subtitle}
           </p>
 
 
-          <div className='absolute md:bottom-10 bottom-5 md:right-10 right-5 left-5 flex flex-col sm:flex-row gap-1 sm:gap-3 items-center md:w-[600px] md:left-auto'>
+          <div className='absolute md:bottom-7 bottom-5 md:right-10 right-5 left-5 flex flex-col sm:flex-row gap-1 sm:gap-3 items-center md:w-[670px] md:left-auto'>
 
             {/* Input with red dot inside */}
             <div className="relative flex-1 w-full">
               <span className="absolute left-5 top-1/2 -translate-y-1/2 w-3 h-3 bg-[#FF3D00] rounded-full z-10" />
               <input
                 placeholder={data.inputPlaceholder}
-                className='w-full md:pl-12 pl-10 pr-6 md:py-4 py-3 bg-transparent border border-[#FFFFFF66] rounded-[16px] text-white placeholder:text-white/60 focus:outline-none focus:border-white/80 transition-colors'
+                className='w-full md:pl-12 pl-10 pr-6 md:py-3 py-2 bg-transparent border border-[#FFFFFF66] rounded-[16px] text-white placeholder:text-white/60 focus:outline-none focus:border-white/80 transition-colors'
               />
             </div>
 
             {/* START NOW button*/}
-            <button className='bg-[#FF3D00] text-black md:px-5 px-5 md:py-4 py-2 rounded-full font-medium flex mditems-center md:gap-2 gap-1 hover:bg-[#ff5a26] transition-colors whitespace-nowrap'>
+            <button className='bg-[#FF3D00] text-black md:px-5 px-5 md:py-3 py-2 rounded-full font-medium flex mditems-center md:gap-2 gap-1 hover:bg-[#ff5a26] transition-colors whitespace-nowrap'>
               {data.buttonText} <HiBolt className="text-xl" />
             </button>
           </div>
